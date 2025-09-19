@@ -45,6 +45,10 @@ export default function Home() {
       .then(res => res.json())
       .then(data => setInternships(data));
   }, []);
+  
+  useEffect(() => {
+    localStorage.setItem('theme', 'dark');
+  }, []);
   useEffect(() => {
     const savedMode = localStorage.getItem('theme');
     if (savedMode === 'dark') {
