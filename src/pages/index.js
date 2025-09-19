@@ -163,8 +163,8 @@ export default function Home() {
       <main>
         <header id="home" className="relative h-[530px] sm:h-[580px] lg:h-[680px] text-[#f4f4f5]">
           {darkMode?
-            <img src="/images/bg1.jpg" alt="home image" className="w-full h-full "/>
-            :<img src="/images/bg2.jpeg" alt="home image" className="w-full h-full "/>
+            <Image src="/images/bg1.jpg" alt="home image" layout="fill"/>
+            :<Image src="/images/bg2.jpeg" alt="home image" layout="fill"/>
           }
           <div className="absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-center items-center p-[30px]">
             <p className="lg:text-[18px] dark:text-gray-200 text-gray-700">Greetings, my name is</p>
@@ -222,11 +222,11 @@ export default function Home() {
         <section id="experience" className="bg-[#fff] dark:bg-[#000319] text-[#f4f4f5] py-[30px] px-[30px] lg:px-7">
           <h2 className="text-[30px] lg:text-[50px] text-center font-semibold mb-[50px] m-auto lg:w-[80%] dark:text-gray-200 text-black">My <span className="text-[#3c83f6]">work experience</span></h2>
           <div className=" grid grid-cols-1 lg:grid-cols-2 gap-[40px] m-auto lg:w-[80%]">
-            {internships?.map((intern)=><div key={intern.id} className="relative overflow-hidden border dark:border-gray-800 border-gray-200 rounded-[30px] px-[15px] lg:px-[40px] pt-[30px] pb-[15px] grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
-              <div className="flex items-center relative z-10">
-                <img src={intern.image} alt={intern.certificate} className="w-[50px] lg:w-full h-[50px] lg:h-[140px] rounded-full"/>
+            {internships?.map((intern)=><div key={intern.id} className="relative overflow-hidden border dark:border-gray-800 border-gray-200 rounded-[30px] px-[15px] lg:px-[40px] grid grid-cols-1 lg:grid-cols-3 gap-[30px]">
+              <div className="top-1/2 -translate-y-1/2 relative z-10 w-[50px] lg:w-full h-[50px] lg:h-[140px] rounded-full overflow-hidden">
+                <Image src={intern.image} alt={intern.certificate} layout="fill" objectFit="cover" className="rounded-full"/>
               </div>
-              <div className="lg:col-span-2 relative z-10">
+              <div className="lg:col-span-2 relative z-10 pt-[30px] mb-[15px]">
                 <h3 className="text-[25px] font-semibold leading-none dark:text-gray-200 text-black">{intern.certificate}</h3>
                 <p className="mb-[10px] text-gray-400" >{intern.title}</p>
                 <p className="text-[14px] dark:text-gray-200 text-gray-700">{intern.description}</p>
