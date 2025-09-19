@@ -239,7 +239,7 @@ export default function Home() {
         <section id="contact" className="bg-[#fff] dark:bg-[#000319] text-[#f4f4f5]">
           <div className="flex flex-col justify-center items-center py-[60px] px-[30px] lg:w-[50%] lg:leading-none m-auto text-center">
             <h2 className="text-[30px] lg:text-[50px] text-center font-semibold mb-[30px] m-auto dark:text-gray-200 text-black">Ready to take <span className="bg-gradient-to-r from-purple-100 via-purple-300 to-blue-500 text-transparent bg-clip-text">your</span> digital presence to the next level?</h2>
-            <p className="mb-[20px] lg:mb-[40px] dark:text-gray-200 text-gray-500">Reech out to me today and let's discuss how I can help you achieve your goals.</p>
+            <p className="mb-[20px] lg:mb-[40px] dark:text-gray-200 text-gray-500">Reech out to me today and let&apos;s discuss how I can help you achieve your goals.</p>
             <div
               className="
                 relative
