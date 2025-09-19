@@ -41,9 +41,9 @@ const projects=[
     },
     {
         id:6,
-        title:"Melify", 
-        description:"Melify is a modern food website built as a frontend-only project, focusing on a clean, responsive design with user-friendly UI components.", 
-        image:"images/Melify.png",
+        title:"Mealify", 
+        description:"Mealify is a modern food website built as a frontend-only project, focusing on a clean, responsive design with user-friendly UI components.", 
+        image:"images/melify.png",
         vercel:"https://wafaasayed10.github.io/mealify/html/index.html", 
         techStack:[{id:1,techTitle:"HTML"}, {id:2,techTitle:"CSS"}]
     },

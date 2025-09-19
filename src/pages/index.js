@@ -29,7 +29,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState('dark');
+  const [darkMode, setDarkMode] = useState(true);
   const [toggleMenu, setToggleMenu] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
