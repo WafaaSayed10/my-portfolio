@@ -1,7 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-gradient-animated {
+    @apply text-transparent bg-clip-text bg-[length:300%_100%] animate-gradient;
+    background-image: linear-gradient(
+      to right,
+      rgba(59, 130, 246),   /* Blue (#3b82f6) */
+      rgba(168, 85, 247),   /* Purple (#a855f7) */
+      rgba(236, 72, 153),   /* Pink (#ec4899) */
+      rgba(251, 146, 60)    /* Orange (#fb923c) */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  color: rgb(22, 22, 47);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
